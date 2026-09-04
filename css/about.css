@@ -1,0 +1,22 @@
+.about-mission { max-width: 760px; }
+.about-mission p {
+  color: var(--text-muted);
+  font-size: 1.08rem;
+}
+
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.values-section { background: var(--bg-elevated); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+.value-item h3 { font-size: 1.1rem; margin: 0 0 8px; }
+.value-item p { color: var(--text-muted); font-size: 0.95rem; margin: 0; }
