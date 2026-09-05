@@ -30,7 +30,11 @@
           <h2>Contact details</h2>
           <div class="contact-info-item">
             <span>Email</span>
-            <a href="mailto:hello@avenqislabs.in">hello@avenqislabs.in</a>
+            <a href="mailto:mailavenqis@gmail.com">mailavenqis@gmail.com</a>
+          </div>
+          <div class="contact-info-item">
+            <span>Phone</span>
+            <a href="tel:+919618186551">+91 96181 86551</a>
           </div>
           <div class="contact-info-item">
             <span>Website</span>
@@ -42,13 +46,24 @@
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm">
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="https://formspree.io/f/mdeodvqq"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New project inquiry — Avenqis Labs website" />
           <div class="form-row">
             <input type="text" name="name" placeholder="Your name" required />
             <input type="email" name="email" placeholder="Your email" required />
           </div>
+          <input type="tel" name="phone" placeholder="Your phone number (optional)" />
           <textarea name="message" rows="5" placeholder="Tell us about your project" required></textarea>
           <button type="submit" class="btn btn-primary">Send message <span aria-hidden="true">&rarr;</span></button>
+          <p class="form-error" id="formError" hidden>
+            Something went wrong sending your message. Please email us directly at
+            <a href="mailto:mailavenqis@gmail.com">mailavenqis@gmail.com</a>.
+          </p>
         </form>
       </div>
     </section>
