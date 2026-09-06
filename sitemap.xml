@@ -6,32 +6,32 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://avenqislabs.in/services.html</loc>
+    <loc>https://avenqislabs.in/services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://avenqislabs.in/portfolio.html</loc>
+    <loc>https://avenqislabs.in/portfolio</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://avenqislabs.in/about.html</loc>
+    <loc>https://avenqislabs.in/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://avenqislabs.in/contact.html</loc>
+    <loc>https://avenqislabs.in/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://avenqislabs.in/privacy.html</loc>
+    <loc>https://avenqislabs.in/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://avenqislabs.in/terms.html</loc>
+    <loc>https://avenqislabs.in/terms</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
