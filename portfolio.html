@@ -7,9 +7,10 @@
   <meta name="description" content="A look at the kind of websites, web apps, and mobile apps Avenqis Labs builds." />
   <link rel="canonical" href="https://avenqislabs.in/portfolio" />
   <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml" />
+  <noscript><style>.reveal,.reveal-item{opacity:1!important;transform:none!important;}</style></noscript>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/portfolio.css" />
 </head>
@@ -19,14 +20,14 @@
 
   <main>
     <section class="page-header">
-      <div class="container">
+      <div class="container reveal">
         <h1>Our Work</h1>
         <p>A look at the kind of products we build — from websites to full mobile apps.</p>
       </div>
     </section>
 
     <section>
-      <div class="container">
+      <div class="container reveal">
         <p class="portfolio-disclaimer">
           The first project below is real, delivered work. The case studies that follow are
           <strong>concept projects</strong> — not real client engagements — created to show how
@@ -37,8 +38,8 @@
     </section>
 
     <section>
-      <div class="container portfolio-grid">
-        <article class="portfolio-card">
+      <div class="container portfolio-grid reveal-stagger">
+        <article class="portfolio-card reveal-item">
           <div class="portfolio-visual" style="background: linear-gradient(135deg, #2563eb, #0f172a);">
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <rect x="36" y="30" width="160" height="14" rx="7" fill="rgba(255,255,255,0.35)"/>
@@ -91,7 +92,7 @@
           </div>
         </article>
 
-        <article class="portfolio-card">
+        <article class="portfolio-card reveal-item">
           <div class="portfolio-visual" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <rect x="36" y="30" width="160" height="14" rx="7" fill="rgba(255,255,255,0.35)"/>
@@ -148,7 +149,7 @@
           </div>
         </article>
 
-        <article class="portfolio-card">
+        <article class="portfolio-card reveal-item">
           <div class="portfolio-visual" style="background: linear-gradient(135deg, #60a5fa, #2563eb);">
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <rect x="36" y="30" width="140" height="50" rx="10" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.3)"/>
@@ -198,7 +199,7 @@
           </div>
         </article>
 
-        <article class="portfolio-card">
+        <article class="portfolio-card reveal-item">
           <div class="portfolio-visual" style="background: linear-gradient(135deg, #1d4ed8, #172554);">
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <rect x="20" y="20" width="190" height="160" rx="14" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.25)"/>
@@ -243,7 +244,7 @@
           </div>
         </article>
 
-        <article class="portfolio-card">
+        <article class="portfolio-card reveal-item">
           <div class="portfolio-visual" style="background: linear-gradient(135deg, #2563eb, #172554);">
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <rect x="20" y="20" width="190" height="160" rx="14" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.25)"/>
@@ -301,7 +302,7 @@
     </section>
 
     <section class="contact-teaser">
-      <div class="container">
+      <div class="container reveal">
         <h2 class="section-title">Want something built like this?</h2>
         <p>Tell us about your project and we'll put together a plan.</p>
         <a href="/contact" class="btn btn-primary">Get in touch <span aria-hidden="true">&rarr;</span></a>
@@ -313,5 +314,6 @@
 
   <script src="js/partials.js"></script>
   <script src="js/nav.js"></script>
+  <script src="js/enhance.js"></script>
 </body>
 </html>

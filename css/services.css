@@ -2,10 +2,15 @@
   display: grid;
   grid-template-columns: 320px 1fr;
   gap: 40px;
-  padding: 48px 0;
+  padding: 48px 24px;
+  margin: 0 -24px;
   border-bottom: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: background 0.3s var(--ease);
 }
 .service-detail:last-child { border-bottom: none; }
+.service-detail:hover { background: rgba(255, 255, 255, 0.02); }
+.service-detail:hover .card-icon { transform: scale(1.08) rotate(-4deg); }
 
 .service-detail-heading { display: flex; align-items: flex-start; gap: 16px; }
 .service-detail-heading h2 { margin: 0; font-size: 1.6rem; }

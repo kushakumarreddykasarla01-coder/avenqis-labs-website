@@ -11,8 +11,53 @@
   background: radial-gradient(60% 60% at 30% 20%, rgba(59, 130, 246, 0.35), transparent 70%),
               radial-gradient(50% 50% at 80% 10%, rgba(37, 99, 235, 0.25), transparent 70%);
   pointer-events: none;
+  animation: heroDrift 18s ease-in-out infinite;
+}
+@keyframes heroDrift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(2%, 3%) scale(1.05); }
 }
 .hero-inner { position: relative; z-index: 1; max-width: 900px; }
+
+.hero-floaters {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  display: none;
+}
+.floater-chip {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(11, 14, 20, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  box-shadow: 0 12px 30px -12px rgba(0, 0, 0, 0.6);
+  animation: floatBob 6s ease-in-out infinite;
+}
+.floater-chip svg { width: 16px; height: 16px; stroke: var(--blue-light); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.floater-chip.chip-1 { top: 8%; right: 6%; animation-delay: 0s; }
+.floater-chip.chip-2 { top: 42%; right: 16%; animation-delay: 1.5s; }
+.floater-chip.chip-3 { top: 74%; right: 2%; animation-delay: 3s; }
+@keyframes floatBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+@media (min-width: 1100px) {
+  .hero-floaters { display: block; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-glow, .floater-chip { animation: none; }
+}
 
 .hero-kicker {
   display: inline-block;
@@ -121,6 +166,11 @@
   background: rgba(255, 255, 255, 0.03);
   font-weight: 500;
   font-size: 0.95rem;
+  transition: border-color 0.3s var(--ease), transform 0.3s var(--ease);
+}
+.industry-item:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+  transform: translateY(-3px);
 }
 .industry-item .card-icon { margin-bottom: 0; flex-shrink: 0; }
 
@@ -136,6 +186,11 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.03);
+  transition: border-color 0.3s var(--ease), transform 0.3s var(--ease);
+}
+.process-step:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+  transform: translateY(-4px);
 }
 .process-num {
   display: inline-flex;
